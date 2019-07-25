@@ -1,15 +1,34 @@
-*{
-    border: 1px solid no-repeat;
-    margin: 0; 
+body {
+    margin: 0;
     padding: 0;
-}
-
-
-.img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-header{
-    font-family: 'Rock Salt', cursive;
-}
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    background-color: #000;
+    }
+      /*animation  */
+    #home {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 7s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+      
+    @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
+      

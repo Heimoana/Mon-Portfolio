@@ -1,67 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Logo dans l'onglet -->
-        <link rel="icon" type="images/jpg" href="images/logo.jpg"/>
-        <body>
+<html>
+<title>Le Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Logo dans l'onglet -->
+<link rel="icon" type="images/jpg" href="images/logo.jpg"/>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-        <!-- En tête du site -->
-        <header class="w3-display-container w3-content w3-center" style="max-width:100%" >
-             <img class="w3-image" src="images/item1.jpg" alt="Me">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="font-family: Times New Roman; color: white">BURNS</h1>
-            <h5 class="w3-hide-large" style="font-family: Times New Roman">BURNS</h5>
-            <h2 class="w3-hide-medium w3-hide-small" style="font-family: Times New Roman; color: white">DEV-WEB</h2>
-        </div>
+<!-- Icon Bar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/logs.jpg" style="width: 50%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Accueil</p>
+  </a>
+  <a href="#presentation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Présenation</p>
+  </a>
+  <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>CV</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-        <!-- Button -->
-        <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-medium" style="bottom:-20px" >
-            <a href="index.html" class="w3-bar-item w3-button">Accueil</a>
-            <a href="#presentation" class="w3-bar-item w3-button">Présentation</a>
-            <a href="#projets" class="w3-bar-item w3-button">Projets</a>
-            <a href="#cv" class="w3-bar-item w3-button">CV</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-        </header>
+<!-- Navbar on small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Accueil</a>
+    <a href="#presentation" class="w3-bar-item w3-button" style="width:25% !important">Présentation</a>
+    <a href="#cv" class="w3-bar-item w3-button" style="width:25% !important"></a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-        <!-- Button -->
-        <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-            <div class="w3-bar w3-light-grey">
-                <a href="index.html" class="w3-bar-item w3-button">Accueil</a>
-                <a href="#presentation" class="w3-bar-item w3-button">Présentation</a>
-                <a href="#projets" class="w3-bar-item w3-button">Projets</a>
-                <a href="#cv" class="w3-bar-item w3-button">CV</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-            </div>
-        </div>
-        <!-- Page content -->
-        <div class="w3-content w3-padding-large w3-margin-top" id="presentation">
-            <h3 style="font-family: Tahoma" align="center"><em>Présentation :</em></h3>
-                <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif" align="center"><strong>Bonjour</strong>, moi c'est Heimoana, j'ai 20 ans, si vous aviez trouver ma page c'est pas par hasard. Je suis me suis lancé dans le domaine du Développement Web car passionné du monde numérique et possédant les qualifications j'ai approfondie mes connaissances et compétences afin de pouvoir </br> vous proposez mes services de qualités.</br></p>
-        
-        <!-- Projet  -->
-        <em><h3 style="font-family: Tahoma" align="center">Projets :</h3></em>
-            <div class="card" style="width: 18rem;">
-                    <img src="images/coiffure.jpeg" class="card-img-top" alt="Projets">
-                    <div class="card-body">
-                    <h5 class="card-title">Puainanoa Coiffure</h5>
-                    <p class="card-text">Puainanoa Coiffure une entreprise privée crée en 2014, par Madame Lotalie TEIKITUTOUA dans la commune de Paea.</p>
-                    <a href="#" class="btn btn-primary">Suivant</a>
-                    </div>
-                </div>
-            
-        <!-- Contact et coordonnés -->
-            <em><h3 style="font-family: Tahoma" align="center">Contact :</h3></em>
-                <p style="font-family: Tahoma; font-size: 15px">Tel :<a href="#"> +689 87 77 24 16</a> </br> Mail :<a href="#"> burnsheimoana@gmail.com </a></p>  
-            
-                <p align="right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.5758050619944!2d-149.53115833943977!3d-17.529029511970403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5677253a2a3d02c!2sRSMA-PF!5e1!3m2!1sfr!2sus!4v1562263555208!5m2!1sfr!2sus" width="600" height="500" frameborder="10" style="border:5" allowfullscreen></iframe></p>
-        <!-- End page content -->
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo lot1"><span class="w3-hide-small">I'm</span> H.BURNS</h1>
+    <p class="lot1">DEV-WEB TAHITI.</p>
+    <img src="images/item1.jpg" alt="boy" class="w3-image" width="100%" height="100%">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <balise id="presentation"></balise>
+    <h2 class="w3-text-light-grey">Je m'appelle,</h2>
+    <p>Heimoana, j'ai 20 ans, si vous aviez trouver ma page c'est pas par hasard. Je suis me suis lancé dans le domaine du Développement Web car passionné du monde numérique et possédant les qualifications j'ai approfondie mes connaissances et compétences afin de pouvoir vous proposez mes services de qualités.</br></p>
+    <hr style="width:200px" class="w3-opacity">
+    <p></p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Mes Compétences :</h3>
+    <p class="w3-wide">HTML & CSS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
+    <p class="w3-wide">PHP</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
+    </div>
+    <p class="w3-wide">MySQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div><br>
+    <!-- End Portfolio Section -->
+  </div> 
 
-    </body>
-</html><li>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <balise id="contact"></balise>
+    <h2 class="w3-text-light-grey">Contact :</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Polynésie Française, Tahiti, Arue RSMA-PF </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d628.8617729008563!2d-149.53102976938177!3d-17.52896592797983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x769a39c573f2dfeb%3A0xf5677253a2a3d02c!2sRSMA-PF!5e1!3m2!1sfr!2s!4v1564081709836!5m2!1sfr!2s" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Téléphone : +689 87 77 24 16</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: burnsheimoana@gmail.com</p>
+    </div><br>
+    <!-- End Contact Section -->
+  </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
